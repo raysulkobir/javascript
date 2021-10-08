@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> jQuery simple star rating example </title>
+    <style>
+        body {
+            background-color: aquamarine;
+            margin: 0px;
+        }
+
+        .fa-star {
+            font-size: 50px;
+            align-content: center;
+        }
+
+        .container {
+            height: 100px;
+            width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="margin-top: 50px;">jQuery simple star rating example</h2>
+        <div class="con">
+            <h3 style="margin-top : 80px; color: green;">Rate our product :-</h3>
+            <i class="fa fa-star" aria-hidden="true" onclick="star(this)" id="st1" data-target_id='1'></i>
+            <i class="fa fa-star" aria-hidden="true" onclick="star(this)" id="st2" data-target_id='2'></i>
+            <i class="fa fa-star" aria-hidden="true" onclick="star(this)" id="st3" data-target_id='3'></i>
+            <i class="fa fa-star" aria-hidden="true" onclick="star(this)" id="st4" data-target_id='4'></i>
+            <i class="fa fa-star" aria-hidden="true" onclick="star(this)" id="st5" data-target_id='5'></i>
+        </div>
+
+        <script>
+
+            function star(t) {
+                var getId = $(t).attr('id');
+                var star = $(t).attr('data-target_id');
+                alert(star)
+
+                makeStar(getId);
+            }
+
+            function makeStar(number) {
+                var number = number;
+                if (number == 'st1') {
+                    $(".fa-star").css("color", "black");
+                    $('#st1').css({ 'color': 'yellow' });
+                } else if (number == 'st2') {
+                    $(".fa-star").css("color", "black");
+                    $('#st1, #st2').css({ 'color': 'yellow' });
+                } else if (number == 'st3') {
+                    $(".fa-star").css("color", "black");
+                    $('#st1, #st2, #st3').css({ 'color': 'yellow' });
+                } else if (number == 'st4') {
+                    $(".fa-star").css("color", "black");
+                    $('#st1, #st2, #st3, #st4').css({ 'color': 'yellow' });
+                } else if (number == 'st5') {
+                    $('#st1, #st2, #st3, #st4, #st5').css({ 'color': 'yellow' });
+                }
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #box {
+            background: tomato;
+            color: green;
+            border: 2px solid red;
+            width: 500px;
+            height: 300px;
+        }
+        #box2{
+            background: lime;
+        }  
+        #box3{
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" class="test">
+        <h2>box 1</h2>
+        <div id="box2">
+            <h2>box 3</h2>
+            <div id="box3">
+                <h2>box 4</h2>
+            </div>
+        </div>
+    </div>
+
+    <button>button</button>
+    
+
+    <script>
+        $(document).ready(() => {
+            $('button').click(function () {
+                // $('#box3').parent().css({'background':'red'});
+                // $('#box3').parentsUntil().css({'background':'red'});
+                // $('#box3').parent('#box2').css({'background':'red'});
+                $('#box3').offsetParent('#box2').css({'background':'red'});
+            })
+
+            
+        })
+
+    </script>
+</body>
+
+</html>

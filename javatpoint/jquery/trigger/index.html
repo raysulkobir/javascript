@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="custom.js"></script>
+
+
+    <script>
+        
+            function triggerFun(){
+                $('#name').trigger('select');
+                $('#name').select(function(){
+                      $("#name").css({ "backgroundColor": "yellow", "fontSize": "25px" });
+                    $("body").css({ "backgroundColor": "lightgreen", "fontSize": "25px" });
+                })
+            }
+        
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <select name="name" id="name">
+            <option>kamla</option>
+            <option>jamal</option>
+            <option>rafik</option>
+        </select>
+    </div>
+    <button onclick="triggerFun()">Debar</button>
+</body>
+
+</html>

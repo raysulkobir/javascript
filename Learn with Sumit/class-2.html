@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="search" id="search">
+    <input type="text" name="reaselt" id="reaselt" value="">
+
+    <samp id="thanks"></samp>
+</body>
+
+</html>
+
+<script>
+    // var color;
+    // javascript = {
+    //     name: "Md.Raysul",
+    //     color: ['Red', 'green', 'yeillo'],
+    //     fun: function () {
+    //         console.table(this.name);
+    //         var self = this;
+    //         this.color.forEach(function (v, i) {
+    //         //    document.write(`<h2> ${v} </h2>`)
+    //              document.getElementById('root').innerHTML += `<h2>Name: ${v} my name: ${self.name}</h2>`;
+    //         });
+    //         // function myFun(v, i) {
+    //         //     console.table(v);
+    //         // }
+    //     }
+    // }
+
+    // console.table(javascript.fun());
+
+    // javascript = {
+    //     name: 'Md.Raysul',
+    //     color: [
+    //         { name: "kamla", age: 20 },
+    //         { name: "jamal", age: 20 },
+    //     ],
+
+    //     fun: function () {
+    //         this.color.forEach((a) => {
+    //             console.log(`Name: ${this.name} sum Name: ${a.name}`);
+    //         })
+    //     }
+    // }
+    // javascript.fun();
+
+
+    // person = {
+    //     name: 'Md.Raysl',
+    //     mebmer: [
+    //         { name: 'Kamal', age: 20 },
+    //         { name: 'jamla', age: 30 },
+    //     ],
+    //     fun: function () {
+    //         this.mebmer.forEache(function(d) {
+    //             console.log(`Member Name: ${d}`);
+    //         })
+    //     }
+    // }
+    // person.mebmer();
+
+    // person = {
+    //     parent: 'Md.Raysl',
+    //     child: [
+    //         { name: 'Kamal', age: 20 },
+    //         { name: 'jamla', age: 30 }
+    //     ],
+    //     fun: function () {
+    //         this.child.forEach((a) => {
+    //             console.log(`Parent ${this.parent} Child: ${a.name}`);
+    //         })
+    //     }
+    // }
+    // person.fun();
+
+    const searcInput = document.querySelector('#search');
+    const resultShow = document.querySelector('#reaselt');
+
+    function show() {
+        resultShow.innerHtml = this.value;
+        setTimeout(function () {
+            resultShow.innerHtml = "thlslls";
+        }, 1000);
+    }
+    searcInput.addEventListener("keyup", show)
+</script>

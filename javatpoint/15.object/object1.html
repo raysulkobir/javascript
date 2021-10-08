@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function emp(id, name, sallery){
+            this.id = id;
+            this.name = name;
+            this.sallery = sallery;
+            this.changeSalary = changeSalary;
+                function changeSalary() {
+                    this.sallery = 30 + this.sallery;
+                }
+        }
+
+        var e = new emp(122, 'kamal', 15);
+       e.changeSalary()
+        console.dir(e.sallery)
+        
+    </script>
+</body>
+</html>

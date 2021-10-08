@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>This is a title</title>
+    </head>
+    <body>
+        <h4 id="test">this</h4>
+        <h1 class="testCladd">this is a heading</h1>
+        <dir id="test1">test 1</dir>
+        <dir class="test1">test 2</dir>
+        <dir class="test1">test 3</dir>
+        <dir class="test1">test 4</dir>
+        <dir class="test1">test 5</dir>
+
+        <ul>
+            <li>lit1</li>
+            <li>lit2</li>
+            <li>lit3</li>
+            <li>lit4</li>
+        </ul>
+
+        <script>
+            lis = document.getElementsByTagName('li');
+             Array.from(lis).forEach((value, index, array) => {
+                 console.log(value);
+             })
+
+            let name = ['kamla', 'jamal', 'rakib', 'parvej', 'rakib'];
+            // name.forEach((value, key)=>{
+            //     console.log(value);
+            // });
+            name.forEach(function(value, key){
+                console.log(value);
+            })
+            console.log('Nishet');
+        </script>
+    </body>
+</html>

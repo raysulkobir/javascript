@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> jQuery simple star rating example </title>
+    <style>
+        body {
+            background-color: aquamarine;
+            margin: 0px;
+        }
+
+        .fa-star {
+            font-size: 50px;
+            align-content: center;
+        }
+
+        .container {
+            height: 100px;
+            width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Name1</li>
+        <li>Name2</li>
+        <li>Name3</li>
+        <li>Name4</li>
+        <li>Name5</li>
+        <li>Name6</li>
+        <li>Name7</li>
+
+        <button>Submit</button>
+    </ul>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $.post('test.html', function (data, state) {
+                    console.log(data);
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

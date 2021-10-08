@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="test1" onclick="Fun(this)">
+        <h2>test bos 1</h2>
+        <p>this is a good boy</p>
+    </div>
+
+    <div id="test2">
+        <h2>test bos 1</h2>
+        <p>this is a good boy</p>
+    </div>
+
+
+    <script>
+
+        function Fun(t) {
+            var data = $(t).attr('h2');
+
+            console.log(data);
+            $(t).css({ 'background': 'green' })
+        }
+
+
+
+    </script>
+</body>
+
+</html>

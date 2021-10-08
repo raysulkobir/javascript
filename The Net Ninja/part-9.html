@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>This is a title</title>
+        <style>
+            .delete{
+                color: red;
+                background: gray;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+ 
+    <div class="test">
+        <div class="banner-page">
+            <div id="bood-list">
+                <ul>
+                    <li>
+                        <span>this is test paragraps</span>
+                        <span class="delete">Delete</span>
+                    </li>
+                    <li>
+                        <span>this is test paragraps</span>
+                        <span class="delete">Delete</span>
+                    </li>
+                    <li>
+                        <span>this is test paragraps</span>
+                        <span class="delete">Delete</span>
+                    </li>
+                    <li>
+                        <span>this is test paragraps</span>
+                        <span class="delete">Delete</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <script>
+             let btns = document.querySelectorAll('#bood-list .delete');
+                btns.forEach((btn) => {
+                     btn.addEventListener('click', function(e){
+                         const li = e.target.parentElement;
+                         li.parentNode.removeChild(li)
+                     })
+                }) 
+        </script>
+    </body>
+</html>
+
+
+<!-- JavaScript querySelector -->

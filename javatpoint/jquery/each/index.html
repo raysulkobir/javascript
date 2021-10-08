@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                console.log('li');
+                var leng = $('ul li').length;
+                $('li').each(function (i, v) {
+                    if (i < 3) {
+                        $(v).css({ 'color': 'red' })
+                    } else {
+                        $(v).css({ 'color': 'green' })
+                    }
+
+                })
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h2> Welcome to the javaTpoint.com </h2>
+    <ul>
+        <li> 1 </li>
+        <li> 2 </li>
+        <li> 3 </li>
+        <li id="i4"> Stop </li>
+        <li> 5 </li>
+        <li> 6 </li>
+    </ul>
+    <button> Click me </button>
+    <p></p>
+</body>
+
+</html>

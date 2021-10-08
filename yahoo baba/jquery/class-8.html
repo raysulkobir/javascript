@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <form action="" id='sform' onclick="sForm(this)">
+        <input type="text" name="name" id="name">
+        <br>
+        <input type="text" name="email" id="email">
+    </form>
+
+    <script>
+        function sForm(t) {
+            var id = $(t).attr(id);
+            console.log(id);
+        }
+
+        $(() => {
+            $('#name, #email').click(function () {
+                $(this).css({ 'background-color': 'green' })
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>

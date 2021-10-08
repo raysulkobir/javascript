@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .test {
+            background: tomato;
+            color: green;
+            border: 2px solid red;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h1 class="heading">Tis is a headin</h1>
+        <p>this is a paragrap</p>
+        <p>this is a paragrap</p>
+        <p>this is a paragrap</p>
+        <div>
+            <samp>this is a samp</samp>
+        </div>
+
+        <h2>this is a heading</h2>
+        <p>this is a paragrap last</p>
+    </div>
+
+    <button>slideDown</button>
+    <button id="button2">slideUp</button>
+    
+
+    <script>
+        $(document).ready(() => {
+            $('button').click(function () {
+                $('#box').slideDown(3000);
+            })
+
+            $('#button2').click(function () {
+                $('#box').slideUp(3000);
+            })
+            
+        })
+
+    </script>
+</body>
+
+</html>

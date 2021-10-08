@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h1 id="heading">Tis is a headin</h1>
+        <p>this is a paragrap</p>
+    </div>
+
+    <div id="sfroms">
+        <input type="text" name="name" id="name">
+        <input type="submit" class="test" value="Save" onclick="sform(this)">
+    </div>
+
+    <script>
+
+
+
+        function sform(t) {
+            var a = $(t).attr();
+            console.log(a);
+            var name = $('#name').val();
+            alert(name)
+        }
+
+    </script>
+</body>
+
+</html>

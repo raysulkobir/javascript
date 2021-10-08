@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #test1 {
+            background: yellow;
+            width: 250px;
+        }
+
+        #test2 {
+            background: red;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test1" onclick="Fun(this)">
+        <h2>test bos 1</h2>
+        <p>this is a good boy</p>
+    </div>
+
+    <div id="test2">
+        <h2>test bos 1</h2>
+        <p>this is a good boy</p>
+    </div>
+
+    <ul onclick="checkUl()">
+        <li>one</li>
+        <li>Two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+    <script>
+        $(document).ready(() => {
+            $('#test1').css({ 'background': 'red' });
+        })
+
+        $('#test2').click(() => {
+            $('#test1').css({ 'background': 'green' });
+        })
+
+        function Fun(t) {
+            $('p:last').css({ 'background': 'green' });
+        }
+
+
+        function checkUl() {
+            // $('li:eq(1)').css({ 'color': 'red' })
+            // $('li:gt(0)').css({ 'color': 'red' })
+            $('li:lt(1)').css({ 'color': 'red' })
+        }
+
+    </script>
+</body>
+
+</html>

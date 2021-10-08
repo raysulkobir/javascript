@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                for (i = 0; i < 10; i++) {
+                    $('ul').append('<li>Test</li>');
+                }
+
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>Name 1</li>
+        <li>Name 2</li>
+    </ul>
+    <button>Click !</button>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="message">A paragraph</p>
+</body>
+<script>
+    let data = document.getElementById(message);
+    console.log(data);
+</script>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- part - getElementsByName  -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript getElementsByName Demo</title>
+</head>
+<body>
+    <p>Please rate the service:</p>
+    <p>
+        <input type="radio" name="rate" value="Very poor"> Very poor
+        <input type="radio" name="rate" value="Poor"> Poor
+        <input type="radio" name="rate" value="OK"> OK
+        <input type="radio" name="rate" value="Good"> Good
+        <input type="radio" name="rate" value="Very Good"> Very Good
+    </p>
+    <p>
+        <button id="btnRate">Submit</button>
+    </p>
+    <script>
+     let btn = document.getElementById('btnRate');
+        btn.addEventListener('click', () => {
+            let rates = document.getElementsByName('rate');
+            rates.forEach((v) => {
+                    if(v.checked){
+                        alert(`Checked :  ${v.value}`);
+                    }
+             })
+        })
+    </script> -->
+
+
+    <!-- JavaScript getElementsByTagName  -->
+<!-- 
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript getElementsByTagName() Demo</title>
+</head>
+<body>
+    <h1>JavaScript getElementsByTagName() Demo</h1>
+    <h2>First heading</h2>
+    <p>This is the first paragraph.</p>
+    <h2>Second heading</h2>
+    <p>This is the second paragraph.</p>
+    <h2>Third heading</h2>
+    <p>This is the third paragraph.</p>
+
+    <button id="btnCount">Count H2</button>
+
+
+
+    <ul>
+        <li>Name</li>
+        <li>Kamal</li>
+    </ul>
+
+    <ul>
+        <li>Md</li>
+        <li>jamal</li>
+    </ul>
+
+    <p>first p</p>
+
+    <button onclick="test()">Buton</button>
+    <script>
+        let btn = document.getElementById('btnCount');
+        btn.addEventListener('click', () => {
+            let headings = document.getElementsByTagName('h1');
+             
+                console.log(headings.length);
+            
+        })
+            
+            function test(){
+                let data = document.getElementsByTagName('ul')[1];
+                data.getElementsByTagName('li')[1].innerHTML = "flkdlfj";
+                console.log(data);
+
+
+                let doc = document.getElementsByTagName('p');
+                for(i=0; i<doc.length; i++){
+                    doc[i].style.background = "green"; 
+                }
+                doc[3].style.background = "green"; 
+                console.log(doc);
+            }
+
+     
+    </script>
+</body>
+
+</html> -->
+
+<!-- JavaScript getElementsByClassName  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li class="item">HTML</li>
+                    <li class="item">CSS</li>
+                    <li class="item highlight">JavaScript</li>
+                    <li class="item">TypeScript</li>
+                </ul>
+            </nav>
+            <h1>getElementsByClassName Demo</h1>
+        </header>
+         <section>
+            <article>
+                <h2 class="heading-secondary">Example 1</h2>
+            </article>
+            <article>
+                <h2 class="heading-secondary">Example 2</h2>
+            </article>
+        </section>
+    </div>
+    <script>
+        let menu = document.getElementById('menu');
+        let items = document.getElementsByClassName('item');
+        console.log(items);
+   
+    </script>
+</body>
+</html> -->
+
+
+<!-- part JavaScript querySelector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>querySelector() Demo</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.jpg" alt="Logo" id="logo">
+        </div>
+        <nav class="primary-nav">
+            <ul>
+                <li class="menu-item current"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#services">Services</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the JS Dev Agency</h1>
+
+        <div class="container">
+            <section class="section-a">
+                <h2>UI/UX</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat, atque accusamus voluptas
+                    laudantium facilis iure adipisci ab veritatis eos neque culpa id nostrum tempora tempore minima.
+                    Adipisci, obcaecati repellat.</p>
+                <button>Read More</button>
+            </section>
+            <section class="section-b">
+                <h2>PWA Development</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni fugiat similique illo nobis quibusdam
+                    commodi aspernatur, tempora doloribus quod, consectetur deserunt, facilis natus optio. Iure
+                    provident labore nihil in earum.</p>
+                <button>Read More</button>
+            </section>
+            <section class="section-c">
+                <h2>Mobile App Dev</h2>
+                <p>Lorem ipsum dolor sit <a>jkfl;fskd</a>amet consectetur adipisicing elit. Animi eos culpa laudantium consequatur ea!
+                    Quibusdam, iure obcaecati. Adipisci deserunt, alias repellat eligendi odit labore! Fugit iste sit
+                    laborum debitis eos?</p>
+                <button>Read More</button>
+            </section>
+        </div>
+    </main>
+    <script>
+        let p = document.querySelectorAll('a:visited');
+        
+        // p.forEach((value, index, array) => {
+        //      data = [value.textContent];
+           
+        // })
+        console.log(p);
+    </script>
+</body>
+</html>

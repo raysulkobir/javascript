@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function abc() {
+            var x = 10;//local variable  
+        }
+
+
+
+        var data = 200;//gloabal variable  
+        function a() {
+            document.writeln(data);
+        }
+        function b() {
+            document.writeln(data);
+        }
+        a();//calling JavaScript function  
+        b();
+
+
+    </script>
+</head>
+
+<body>
+    <p>Welcome to JavaScript</p>
+    <form>
+        <input type="button" value="click" onclick="a()" />
+        <input type="button" value="submit" onclick="msg2()" />
+    </form>
+</body>
+
+</html>

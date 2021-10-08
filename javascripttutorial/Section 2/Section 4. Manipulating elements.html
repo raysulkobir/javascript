@@ -1,0 +1,44 @@
+
+<!-- createElement() – create a new element  -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS CreateElement Demo</title>
+</head>
+<body>
+    <script>
+        let div = document.createElement('div');
+        div.id = 'content';
+        div.innerHTML = '<p>CreateElement example</p>';
+        document.appendChild(div);
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript appendChild() Demo</title>
+</head>
+<body>
+    <ul id="menu">
+    </ul>
+    <script>
+        function createMenuItem(name, i){
+            li = document.createElement('li');
+                li.textContent = name+i;
+                return li;
+        }
+        const menu = document.querySelector('#menu');
+        for(i=0; i<10; i++){
+            menu.appendChild(createMenuItem('Home', 2));
+        }
+       
+        // console.log('#menu');
+    </script>
+</body>

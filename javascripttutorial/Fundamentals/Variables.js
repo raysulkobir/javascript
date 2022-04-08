@@ -12,8 +12,11 @@ let c = 10;
 console.log(c);
 
 
-// const d = 10;
-console.log(d);
-const d = 20;
+// Constants
+
+const c1 = 10
+console.log(c1);
+const c2 = 20;
+console.log(c2);
 
 

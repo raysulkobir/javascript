@@ -23,4 +23,15 @@ if(c == "Cat"){
     console.log("c is not cat");
 }
 
+let d = "Dog";
+let e = "Elephant";
+
+if(d == "Dog" || e == "Elephant"){
+    console.log("d and e are dog and elephant");
+}else{
+    console.log("d and e are not dog and elephant");
+}
+
+
+
 

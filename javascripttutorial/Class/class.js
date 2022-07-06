@@ -12,12 +12,20 @@
 
 
 class Person {
-    constructor(name) {
+    constructor(name, age) {
         this.name = name;
+        this.age = age;
     }
     getName() {
-        return this.name;
+        return this.name+" test";
     }
 }
 
-console.log("hello dfdfdfd")
+let per = new Person("Md.Raysul kobir", 25);
+console.log(per)
+console.log(per.getName())
+
+console.log(typeof Person)
+
+
+ 

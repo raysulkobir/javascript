@@ -9,21 +9,22 @@
 // console.log(p);
 
 
-
-//* JavaScript new.target in constructors
-class Person {
-    constructor(name) {
+class Person{
+    construct(name) {
         this.name = name;
     }
 }
 
 class Employee extends Person {
-    constructor(name, title) {
-        super(name);
-        this.title = title;
-    }
+  constructor(name, title) {
+    super(name);
+    this.title = title;
+  }
 }
 
 let john = new Person('John Doe'); // Person
 let lily = new Employee('Lily Bush', 'Programmer'); // Employee
 
+console.log("lily", lily);
+ 
+ 

@@ -1,0 +1,1 @@
+// Functional Programming is a paradigm of building computer programs using expressions and functions without mutating state and data. In this article, we will talk about doing functional programming using JavaScript. We will also explore various JavaScript methods and features that make it possible.

@@ -19,13 +19,13 @@ class Person {
     getName() {
         return this.name+" test";
     }
+    getHasan() {
+        return "hasan";
+    }
 }
 
 let per = new Person("Md.Raysul kobir", 25);
-console.log(per)
-console.log(per.getName())
-
-console.log(typeof Person)
+ 
 
 
  

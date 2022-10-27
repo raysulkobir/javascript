@@ -14,7 +14,6 @@ function myFilter(arr, cb){
             newArr.push(arr[i]);
         }
     }
-
     return newArr;
 }
 

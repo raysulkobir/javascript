@@ -1,0 +1,1 @@
+// https://www.javatpoint.com/javascript-oops-classes#:~:text=In%20JavaScript%2C%20classes%20are%20the,is%20executed%20in%20strict%20mode.

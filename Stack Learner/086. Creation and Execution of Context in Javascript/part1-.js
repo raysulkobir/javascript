@@ -1,1 +1,1 @@
-https://www.tutorialsteacher.com/javascript/javascript-object#:~:text=Objects%20are%20same%20as%20variables,function%20with%20the%20new%20keyword.
+// https://www.tutorialsteacher.com/javascript/javascript-object#:~:text=Objects%20are%20same%20as%20variables,function%20with%20the%20new%20keyword.

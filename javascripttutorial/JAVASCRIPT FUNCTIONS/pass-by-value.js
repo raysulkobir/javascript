@@ -11,9 +11,13 @@ let person = {
   age: 25,
 };
 
-function increaseAge(obj){
-    obj.age++;
-}
+// function increaseAge(obj){
+//     obj.age++;
+// }
 
-increaseAge(person);
-console.log(person);
+// increaseAge(person);
+// console.log(person);
+
+var des = Object.getOwnPropertyDescriptor(person, 'name');
+
+console.log(des);

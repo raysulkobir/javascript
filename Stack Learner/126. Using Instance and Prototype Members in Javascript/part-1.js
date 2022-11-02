@@ -1,5 +1,9 @@
 function squary(width){
   this.width = width;
+  this.getWidth = function(){
+    console.log('this is draw'+ this.width)
+    this.draw();
+  }
 }
 
 squary.prototype = {
